@@ -1,5 +1,6 @@
 <div class="chat-popup" id="webchat" role="main" style="height: 30%; width: 15%; margin-top:5%; margin-left:10%"></div>
 
+<button id="open" class="open-button" onclick="openForm()">Open Chat</button>
 <button id="close" type="button" class="btn cancel" onclick="closeForm()">Close Chat</button> 
 
 <script src="https://omnireach.net/webchat?key=PbjMaijC3EKXWii/ANCiHQ==" type="text/javascript"></script>
@@ -39,23 +40,30 @@ function closeForm() {
   
 </script>
 
-*// CSS Stle *//
-
 #webchat {
-  border: Solid;
-  border-color: #0076C1;
+  display: none;
   position: fixed;
   bottom: 0;
-  right:0;
-  
- 
+  right: 15px;
+  border: 3px solid #0076C1;
+
   
 }
 
-div[role="main"]{
- 
-  
+#open {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 305px;
+  width: 140px;
+  padding: 16px 20px;
+  font-size: 12px;
 }
+
 
 #close {
   background-color: #0076C1;
@@ -64,8 +72,8 @@ div[role="main"]{
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-
-}
+  bottom: 80px;
+  right: 305px;
+  width: 140px;
+  padding: 16px 20px;
+  font-size: 12px;
