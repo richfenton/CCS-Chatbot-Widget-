@@ -1,6 +1,6 @@
-<div class="chat-popup" id="webchat" role="main" style="height: 30%; width: 15%; margin-top:5%; margin-left:10%"></div>
+<div class="chat-popup" id="webchat" role="main" style="height: 360px; width: 285px; margin-top:5%; margin-left:10%"></div>
 
-<button id="open" class="open-button" onclick="openForm()">Open Chat</button>
+<button id="open" class="open-button" onclick="openForm()">Start Chat</button>
 <button id="close" type="button" class="btn cancel" onclick="closeForm()">Close Chat</button> 
 
 <script src="https://omnireach.net/webchat?key=PbjMaijC3EKXWii/ANCiHQ==" type="text/javascript"></script>
@@ -13,11 +13,11 @@
 
             hideUploadButton: false,
             bubbleFromUserBackground: 'lightblue',
-            sendBoxButtonColor: 'red',
+            sendBoxButtonColor: '#0076C1',
             typingAnimationDuration: 5000,
             typingAnimationHeight: 20,
             typingAnimationWidth: 64,
-            timestampColor: undefined,
+            timestampColor: 'undefined',
             timestampFormat: 'relative',
             botAvatarImage: 'https://docs.microsoft.com/en-us/azure/bot-service/v4sdk/media/logo_bot.svg?view=azure-bot-service-4.0'
 
@@ -37,6 +37,8 @@
 function closeForm() {
   document.getElementById("webchat").style.display = "none";
 }
+
+  
   
 </script>
 
@@ -58,7 +60,7 @@ function closeForm() {
   opacity: 0.8;
   position: fixed;
   bottom: 23px;
-  right: 16px;
+  right: 15px;
   width: 140px;
   height: 40px;
   padding: 16px 20px;
